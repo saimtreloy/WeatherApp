@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5b164d"
+    tools:context="com.moodybugs.saim.weatherapp.Developer">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/btnNavigationHomeDev"
+            android:background="?android:selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"/>
+
+        <TextView
+            android:id="@+id/txtCityNameDetail"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Developer"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#AAFFFFFF"/>
+        <ImageButton
+            android:id="@+id/btnDeveloper"
+            android:visibility="invisible"
+            android:background="?android:selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_developer"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/linearLayout1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/saim"
+            app:civ_border_width="6dp"
+            app:civ_border_color="#99FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="Md. Mobinur Rahman Saim\nAndroid Developer\nCopyright 2016"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnFacebook"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_facebook"/>
+            <ImageButton
+                android:id="@+id/btnPlayStor"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_store"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Repo Weather</string>
+    <string name="icon_transition">iconTransition</string>
+</resources>
